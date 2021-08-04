@@ -7,6 +7,9 @@
 
 * `ember g acceptance-test list-tasks`
 * `ember generate route about`
+* `ember generate adapter application`
+* `ember g component task-listing`
+
 
 Running single tests:
 * `ember test --filter "Acceptance | list tasks"`
@@ -26,6 +29,14 @@ You will need the following things properly installed on your computer.
 * `git clone <repository-url>` this repository
 * `cd tasks-ember`
 * `npm install`
+
+## Plugins installed:
+
+Tutorial style
+* ember install ember-cli-tutorial-style
+
+Mirage, a kind of fake server
+* ember install ember-cli-mirage
 
 ## Running / Development
 

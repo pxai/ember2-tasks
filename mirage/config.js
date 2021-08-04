@@ -1,0 +1,36 @@
+export default function() {
+  this.namespace = '/api';
+
+  this.get('/tasks', function() {
+    return {
+      data: [{
+        type: 'tasks',
+        id: 1,
+        attributes: {
+          title: 'Communicate',
+          category: 'todo',
+          difficulty: 2,
+          description: 'Task todo'
+        }
+      }, {
+        type: 'tasks',
+        id: 2,
+        attributes: {
+          title: 'Work hard',
+          category: 'doing',
+          difficulty: 5,
+          description: 'Task todo'
+        }
+      }, {
+        type: 'tasks',
+        id: 3,
+        attributes: {
+          title: 'Start',
+          category: 'done',
+          difficulty: 10,
+          description: 'Task done already'
+         }
+      }]
+    };
+  });
+}

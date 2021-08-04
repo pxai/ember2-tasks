@@ -1,0 +1,17 @@
+<article class="listing">
+    <h3>{{task.title}}</h3>
+    <a {{action 'toggleVisible'}} class="image {{if isVisible "visible"}}">
+        
+        <img src={{task.difficulty}} alt="">
+        <small>View status</small>
+    </a>
+    <div class="detail description">
+      <span>Description:</span> {{task.description}}
+    </div>
+    <div class="detail type">
+      <span>Type:</span> {{rental.category}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Difficulty:</span> {{rental.difficulty}}
+    </div>
+  </article>
