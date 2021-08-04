@@ -4,9 +4,9 @@ export default DS.JSONAPIAdapter.extend({
     namespace: 'api',
 
     urlForFindAll(modelName, snapshot) {
-        return `${this.namespace}/tasks.json`;
+        return `/api/tasks.json`;
     },
     urlForFindRecord(id, modelName, snapshot) {
-        return `${this.namespace}/tasks/${id}.json`;
+        return `/api/tasks/${id}.json`;
     }
 });
