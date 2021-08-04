@@ -1,0 +1,22 @@
+<div class="jumbo">
+  <div class="right tomster"></div>
+  <h2>Welcome to tasks!</h2>
+  <p>Start managing your tasks right now!</p>
+  {{#each model as |task|}}
+  <article class="listing">
+    <h3>{{task.title}}</h3>
+    <div class="detail owner">
+      <span>Description:</span> {{task.description}}
+    </div>
+    <div class="detail type">
+      <span>Type:</span> {{rental.category}}
+    </div>
+    <div class="detail bedrooms">
+      <span>Difficulty:</span> {{rental.difficulty}}
+    </div>
+  </article>
+{{/each}}
+  {{#link-to "about" class="button"}}
+    About Us
+  {{/link-to}}
+</div>

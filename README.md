@@ -2,8 +2,15 @@
 
 [![Build Status](https://travis-ci.com/pxai/ember2-tasks.svg?token=arqgKqUXMMcY8kTPhsyy&branch=master)](https://travis-ci.com/pxai/ember2-tasks)
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+## Generators:
+
+* `ember g acceptance-test list-tasks`
+* `ember generate route about`
+
+Running single tests:
+* `ember test --filter "Acceptance | list tasks"`
+* `ember test --module "Acceptance | list tasks"`
 
 ## Prerequisites
 
@@ -33,7 +40,9 @@ Make use of the many generators for code, try `ember help generate` for more det
 ### Running Tests
 
 * `ember test`
-* `ember test --server`
+* `ember t`
+If you want an UI
+* `ember test --server`  
 
 ### Building
 
