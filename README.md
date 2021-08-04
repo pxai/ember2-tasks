@@ -1,5 +1,7 @@
 # tasks-ember
 
+[![Build Status](https://travis-ci.com/pxai/ember2-tasks.svg?token=arqgKqUXMMcY8kTPhsyy&branch=master)](https://travis-ci.com/pxai/ember2-tasks)
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 
