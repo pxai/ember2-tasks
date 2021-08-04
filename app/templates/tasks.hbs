@@ -3,9 +3,8 @@
   <h2>Welcome to tasks!</h2>
   <p>Start managing your tasks right now!</p>
   {{#each model as |taskUnit|}}
-
-  {{task-listing task=taskUnit}}
-{{/each}}
+      {{task-listing task=taskUnit}}
+  {{/each}}
   {{#link-to "about" class="button"}}
     About Us
   {{/link-to}}

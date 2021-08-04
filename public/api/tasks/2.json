@@ -1,0 +1,12 @@
+{
+    "data": [{
+      "type": "tasks",
+      "id": 2,
+      "attributes": {
+        "title": "Work hard",
+        "category": "doing",
+        "difficulty": 5,
+        "description": "Task todo"
+      }
+    }]
+}

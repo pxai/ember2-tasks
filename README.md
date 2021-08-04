@@ -9,6 +9,8 @@
 * `ember generate route about`
 * `ember generate adapter application`
 * `ember g component task-listing`
+* `ember g helper task-category-type`
+* `ember g model task`
 
 
 Running single tests:

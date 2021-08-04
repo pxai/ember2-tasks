@@ -1,0 +1,12 @@
+{
+    "data": [{
+      "type": "tasks",
+      "id": 1,
+      "attributes": {
+        "title": "Communicate",
+        "category": "todo",
+        "difficulty": 2,
+        "description": "Task todo"
+      }
+    }]
+}

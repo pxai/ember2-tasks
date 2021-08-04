@@ -1,0 +1,12 @@
+{
+    "data": [{
+      "type": "tasks",
+      "id": 3,
+      "attributes": {
+        "title": "Start",
+        "category": "done",
+        "difficulty": 10,
+        "description": "Task done already"
+      }
+    }]
+}
