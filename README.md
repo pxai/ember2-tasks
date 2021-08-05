@@ -3,6 +3,9 @@
 [![Build Status](https://travis-ci.com/pxai/ember2-tasks.svg?token=arqgKqUXMMcY8kTPhsyy&branch=master)](https://travis-ci.com/pxai/ember2-tasks)
 
 
+Notes: I started this using node 8, but when I introduced ember-cli-mirage I started having problems to run this.
+mirage does not work with node 8, so I had to move to node 10.
+
 ## Generators:
 
 * `ember g acceptance-test list-tasks`
@@ -12,6 +15,13 @@
 * `ember g helper task-category-type`
 * `ember g model task`
 
+## Mirage
+
+You can create factories for data:
+
+* `ember g mirage-factory task`
+Then you can just add functions
+https://www.ember-cli-mirage.com/versions/v0.4.x/shorthands/
 
 Running single tests:
 * `ember test --filter "Acceptance | list tasks"`

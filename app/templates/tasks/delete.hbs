@@ -1,17 +1,17 @@
 <article class="listing">
     <h3>Delete: are you sure?</h3>
         <div class="detail description">
-      <span>Title:</span> {{task.title}}
+      <span>Title:</span> {{model.title}}
     </div>
     <div class="detail description">
-      <span>Description:</span> {{task.description}}
+      <span>Description:</span> {{model.description}}
     </div>
     <div class="detail type">
-       <span>Type:</span> {{task-category-type task.category}}
+       <span>Type:</span> {{task-category-type model.category}}
       - {{task.category}}
     </div>
     <div class="detail bedrooms">
-      <span>Difficulty:</span> {{rental.difficulty}}
+      <span>Difficulty:</span> {{model.difficulty}}
     </div>
     <button {{action 'delete' on='click'}}class="button">Delete</button>
     <button {{action 'cancel' on='click'}}class="button">Cancel</button>

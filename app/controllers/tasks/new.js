@@ -8,6 +8,7 @@ export default Ember.Controller.extend({
             const difficulty= this.get('difficulty');
             const type = 'todo';
 
+            console.log(title, description, difficulty, type);
             const task = this.store.createRecord('task', {
                     title,
                     description,

@@ -3,9 +3,11 @@ import Ember from 'ember';
 export default Ember.Controller.extend({
     actions: {
         delete: function() {
-            this.get('model').deleteRecord();
+            const task = this.store.peekRecord('task', this.get('model').get('id'));
+            console.log("About to delete: ", task, task.get('id'));
+            task.destroyRecord(); 
+
             this.transitionToRoute('tasks');
-            this.get('model').save();
         },
         cancel: function () {
             this.transitionToRoute('tasks');

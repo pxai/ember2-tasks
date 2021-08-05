@@ -1,14 +1,14 @@
 <article class="listing">
-    <h3>Detail: {{task.title}}</h3>
+    <h3>Detail: {{model.title}}</h3>
     <div class="detail description">
-      <span>Description:</span> {{task.description}}
+      <span>Description:</span> {{model.description}}
     </div>
     <div class="detail type">
-       <span>Type:</span> {{task-category-type task.category}}
+       <span>Type:</span> {{task-category-type model.category}}
       - {{task.category}}
     </div>
     <div class="detail bedrooms">
-      <span>Difficulty:</span> {{rental.difficulty}}
+      <span>Difficulty:</span> {{model.difficulty}}
     </div>
     {{#link-to "tasks"}}See all{{/link-to}}
   </article>
