@@ -1,1 +1,4 @@
-{{outlet}}
+  {{outlet}}
+  {{#each model as |taskUnit|}}
+      {{task-listing task=taskUnit}}
+  {{/each}}

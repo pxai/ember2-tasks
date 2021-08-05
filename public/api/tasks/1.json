@@ -1,5 +1,5 @@
 {
-    "data": [{
+    "data": {
       "type": "tasks",
       "id": 1,
       "attributes": {
@@ -8,5 +8,5 @@
         "difficulty": 2,
         "description": "Task todo"
       }
-    }]
+    }
 }
