@@ -1,5 +1,8 @@
 <article class="listing">
-    <h3>Delete: {{task.title}}</h3>
+    <h3>Delete: are you sure?</h3>
+        <div class="detail description">
+      <span>Title:</span> {{task.title}}
+    </div>
     <div class="detail description">
       <span>Description:</span> {{task.description}}
     </div>
@@ -10,5 +13,7 @@
     <div class="detail bedrooms">
       <span>Difficulty:</span> {{rental.difficulty}}
     </div>
+    <button {{action 'delete' on='click'}}class="button">Delete</button>
+    <button {{action 'cancel' on='click'}}class="button">Cancel</button>
     {{#link-to "tasks"}}See all{{/link-to}}
   </article>
