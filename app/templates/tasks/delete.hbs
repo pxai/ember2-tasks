@@ -1,10 +1,5 @@
 <article class="listing">
-    <h3>{{task.title}}</h3>
-    <a {{action 'toggleVisible'}} class="image {{if isVisible "visible"}}">
-        
-        <span>{{task.difficulty}}</span>
-        <small>View status</small>
-    </a>
+    <h3>Delete: {{task.title}}</h3>
     <div class="detail description">
       <span>Description:</span> {{task.description}}
     </div>
@@ -15,8 +10,5 @@
     <div class="detail bedrooms">
       <span>Difficulty:</span> {{rental.difficulty}}
     </div>
-    <div>
-        {{#link-to 'tasks.detail' task.id}}Detail{{/link-to}}
-        {{#link-to 'tasks.edit' task.id}}Edit{{/link-to}}
-    </div>
+    {{#link-to "tasks"}}See all{{/link-to}}
   </article>

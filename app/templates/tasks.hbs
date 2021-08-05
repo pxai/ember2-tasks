@@ -2,12 +2,8 @@
   <div class="right tomster"></div>
   <h2>Welcome to tasks!</h2>
   <p>Start managing your tasks right now!</p>
-  {{#link-to "tasks.new" class="button"}}Add task{{/link-to}}
+    {{#link-to "tasks.new" class="button"}}Add task{{/link-to}}
     {{outlet}}
-  {{#each model as |taskUnit|}}
-      {{task-listing task=taskUnit}}
-  {{/each}}
-
   {{#link-to "about" class="button"}}
     About Us
   {{/link-to}}
