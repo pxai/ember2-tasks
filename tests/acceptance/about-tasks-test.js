@@ -1,7 +1,7 @@
 import { test } from 'qunit';
 import moduleForAcceptance from 'tasks-ember/tests/helpers/module-for-acceptance';
 
-moduleForAcceptance('Acceptance | list tasks');
+moduleForAcceptance('Acceptance | about tasks');
 
 test('should show about page', function (assert) {
   visit('/about');

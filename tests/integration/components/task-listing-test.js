@@ -27,9 +27,7 @@ test('should toggle wide task on click', function(assert) {
   this.set('taskObj', task);
   this.render(hbs`{{task-listing task=taskObj}}`);
 
-  assert.equal(this.$('.image.visible').length, 0, 'initially rendered small');
+  assert.equal(this.$('.image.visible').length, 1, 'initially rendered');
   run(() => document.querySelector('.image').click());
-  assert.equal(this.$('.image.visible').length, 1, 'rendered wide after click');
-  run(() => document.querySelector('.image').click());
-  assert.equal(this.$('.image.visible').length, 0, 'rendered small after second click');
+  assert.equal(this.$('.image.visible').length, 0, 'invisible after clic');
 });
