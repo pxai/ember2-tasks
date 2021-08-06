@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.com/pxai/ember2-tasks.svg?token=arqgKqUXMMcY8kTPhsyy&branch=master)](https://travis-ci.com/pxai/ember2-tasks)
 
+Simple classic todo-list implemented in Ember 2.18.2. The official tutorial is nice but you'll probably miss how
+to do certain things. This simple app covers the classic CRUD operations.
 
 Notes: I started this using node 8, but when I introduced ember-cli-mirage I started having problems to run this.
 mirage does not work with node 8, so I had to move to node 10.
