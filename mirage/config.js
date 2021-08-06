@@ -46,9 +46,10 @@ let tasks = [{
   });
 
   this.patch('/tasks/:id', (schema, request) => {
-    const attrs = JSON.parse(request.requestBody).task;
+    const id = request.params.id;
+    const attrs = JSON.parse(request.requestBody).data.attributes;
     console.log("Updating a new task: ", attrs)
-    return schema.tasks.save(attrs);
+    return  schema.tasks.find(id).update(attrs);
   });
 
   this.del('/tasks/:id', (schema, request) => {

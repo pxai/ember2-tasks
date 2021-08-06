@@ -2,11 +2,13 @@
   <div>
     <form {{action 'save' on="submit"}}>
         <dl>
-        <dt>Title:<br> {{input value=model.title}}</dt>
-        <dt>Description:<br> {{textarea value=model.description cols="40" rows="6"}}</dt>
-        <dt>Difficulty:<br> {{input value=model.difficulty}}</dt>
+          <dt>Title:<br> {{input value=model.title}}</dt>
+          <dt>Description:<br> {{textarea value=model.description cols="40" rows="6"}}</dt>
+          <dt>Difficulty:<br> {{input value=model.difficulty}}</dt>
         </dl>
-        <button type="submit" class="btn btn-primary">Done</button>
+        <div>
+          <button type="submit" class="button">Save</button>
+        </div>
     </form>
     </div>
     {{#link-to "tasks"}}See all{{/link-to}}

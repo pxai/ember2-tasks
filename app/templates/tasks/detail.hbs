@@ -10,5 +10,9 @@
     <div class="detail bedrooms">
       <span>Difficulty:</span> {{model.difficulty}}
     </div>
-    {{#link-to "tasks"}}See all{{/link-to}}
+    <div>
+        {{#link-to 'tasks.detail' model.id}}Detail{{/link-to}} |
+        {{#link-to 'tasks.edit' model.id}}Edit{{/link-to}} | 
+        {{#link-to 'tasks.delete' model.id}}Delete{{/link-to}}
+    </div>
   </article>

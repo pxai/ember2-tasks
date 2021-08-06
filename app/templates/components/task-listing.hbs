@@ -3,17 +3,17 @@
     <a {{action 'toggleVisible'}} class="image {{if isVisible "visible"}}">
         
         <span>{{task.difficulty}}</span>
-        <small>View status</small>
+        <small>Hide</small>
     </a>
     <div class="detail description">
       <span>Description:</span> {{task.description}}
     </div>
     <div class="detail type">
-       <span>Type:</span> {{task-category-type task.category}}
-      - {{task.category}}
+       <span>Type:</span> {{task-category-type task.type}}
+      - {{task.type}}
     </div>
     <div class="detail bedrooms">
-      <span>Difficulty:</span> {{rental.difficulty}}
+      <span>Difficulty:</span> {{task.difficulty}}
     </div>
     <div>
         {{#link-to 'tasks.detail' task.id}}Detail{{/link-to}}
